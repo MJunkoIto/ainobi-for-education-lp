@@ -3,11 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AINOBI for Education | 教育・研修特化型 AI学習プラットフォーム</title>
-<meta name="description" content="AINOBI for Educationは、既存の授業資料をAIが教材化し、AIアバター講師による講義・テスト生成・学習管理までを一元化する、学校・教育機関向けのAI学習プラットフォームです。">
+<title>AINOBI for Education｜教育機関向けAI学習プラットフォーム</title>
+<meta name="description" content="AINOBI for Educationは、学校・大学・専門学校・日本語学校・学習塾などの教育機関向けAI学習プラットフォームです。既存資料からの教材生成、AIアバター講師、テスト生成、学習管理を一元化します。">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AINOBI for Education｜教育機関向けAI学習プラットフォーム">
+<meta property="og:description" content="既存資料からの教材生成、AIアバター講師、テスト生成、学習管理を一元化できる、教育機関向けAI学習プラットフォームです。">
+<meta property="og:site_name" content="AINOBI for Education">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "株式会社GeekAca",
+  "alternateName": "AINOBI for Education",
+  "url": "https://biz.ainobi.ai/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "JP",
+    "addressRegion": "東京都",
+    "addressLocality": "千代田区",
+    "streetAddress": "内幸町2-2-3 日比谷国際ビル3F"
+  }
+}
+</script>
 <style>
 /* ==================== Reset & Base ==================== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -237,7 +259,7 @@ section{scroll-margin-top:78px;}
 .mock-dots{display:flex;gap:6px;margin-bottom:14px;}
 .mock-dots span{width:8px;height:8px;border-radius:50%;background:#dbe4f0;}
 .mock-title-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
-.mock-title-row h4{font-size:13.5px;font-weight:700;color:var(--color-text);}
+.mock-title-row p{font-size:13.5px;font-weight:700;color:var(--color-text);}
 .mock-avatar{
   width:34px;height:34px;border-radius:50%;background:var(--gradient-brand);
   display:flex;align-items:center;justify-content:center;color:#fff;flex:none;
@@ -272,7 +294,7 @@ section{scroll-margin-top:78px;}
 .mock-chart{width:52%;left:2%;bottom:2%;padding:16px 18px;z-index:4;animation-delay:.7s;}
 @media(max-width:1199px){.mock-chart{width:56%;}}
 @media(max-width:750px){.mock-chart{position:static;top:auto;right:auto;bottom:auto;left:auto;inset:auto;transform:none;width:100%;}}
-.mock-chart h5{font-size:11.5px;font-weight:700;color:var(--color-subtext);margin-bottom:10px;}
+.mock-chart p{font-size:11.5px;font-weight:700;color:var(--color-subtext);margin-bottom:10px;}
 .mock-chart .bars{display:flex;align-items:flex-end;gap:6px;height:56px;}
 /* 配色調整: 棒グラフをブランド規定の3色に統一 */
 .mock-chart .bars i{flex:1;border-radius:4px 4px 0 0;background:linear-gradient(180deg,var(--color-brand-accent),var(--color-brand-dark));}
@@ -375,7 +397,7 @@ section{scroll-margin-top:78px;}
 .chat-top{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid rgba(56,103,137,.06);}
 .chat-top .mock-avatar{width:42px;height:42px;}
 .chat-top .mock-avatar svg{width:22px;height:22px;}
-.chat-top h5{font-size:14px;font-weight:700;color:var(--color-text);}
+.chat-top p{font-size:14px;font-weight:700;color:var(--color-text);}
 .chat-top span{font-size:11.5px;color:var(--color-subtext);}
 .chat-history{display:flex;flex-direction:column;gap:10px;margin-bottom:16px;}
 .bubble{max-width:78%;padding:10px 14px;border-radius:14px;font-size:12.5px;line-height:1.6;}
@@ -590,7 +612,7 @@ footer{background:var(--color-brand-dark);color:rgba(255,255,255,.7);padding-top
 
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
-    <a href="#" class="header-logo"><img src="logo.svg" alt="AINOBI for Education"></a>
+    <a href="#" class="header-logo"><img src="logo.svg" alt="AINOBI" width="131" height="28"></a>
     <nav class="main-nav" id="mainNav">
       <a href="#features" data-nav>特徴</a>
       <a href="#usecases" data-nav>活用シーン</a>
@@ -607,6 +629,7 @@ footer{background:var(--color-brand-dark);color:rgba(255,255,255,.7);padding-top
   </div>
 </header>
 
+<main>
 <section class="hero" id="hero">
   <div class="hero-decor">
     <div class="hero-grid"></div>
@@ -630,7 +653,7 @@ footer{background:var(--color-brand-dark);color:rgba(255,255,255,.7);padding-top
       <div class="mock-card mock-main">
         <div class="mock-dots"><span></span><span></span><span></span></div>
         <div class="mock-title-row">
-          <h4>AI講義プレビュー</h4>
+          <p>AI講義プレビュー</p>
           <div class="mock-avatar">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
@@ -653,7 +676,7 @@ footer{background:var(--color-brand-dark);color:rgba(255,255,255,.7);padding-top
         </div>
       </div>
       <div class="mock-card mock-chart">
-        <h5>学習進捗</h5>
+        <p>学習進捗</p>
         <div class="bars">
           <i style="height:40%"></i><i style="height:65%"></i><i style="height:50%"></i><i style="height:85%"></i><i style="height:72%"></i><i style="height:92%"></i>
         </div>
@@ -755,7 +778,7 @@ footer{background:var(--color-brand-dark);color:rgba(255,255,255,.7);padding-top
         <div class="device">
           <div class="chat-top">
             <div class="mock-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-            <div><h5>AIアバター講師</h5><span>第2章「関数とグラフ」を講義中</span></div>
+            <div><p>AIアバター講師</p><span>第2章「関数とグラフ」を講義中</span></div>
           </div>
           <div class="chat-history">
             <div class="bubble ai">この関数のグラフが右上がりになる理由、一緒に確認してみましょう。</div>
@@ -1125,6 +1148,7 @@ footer{background:var(--color-brand-dark);color:rgba(255,255,255,.7);padding-top
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap footer-grid">
