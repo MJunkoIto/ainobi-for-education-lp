@@ -112,11 +112,18 @@ section{scroll-margin-top:78px;}
 /* ==================== Header ==================== */
 .site-header{
   position:fixed;top:0;left:0;right:0;z-index:1000;
+  transition:box-shadow .35s ease;
+}
+/* backdrop-filterはヘッダー自身ではなく疑似要素にかけ、内部のposition:fixedな
+   モバイルメニュー(.main-nav)が誤ってヘッダーを配置基準にしてしまうのを防ぐ */
+.site-header::before{
+  content:'';position:absolute;inset:0;z-index:-1;
   background:rgba(244,248,251,.72);
   backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  transition:background .35s ease,box-shadow .35s ease;
+  transition:background .35s ease;
 }
-.site-header.scrolled{background:rgba(255,255,255,.96);box-shadow:0 4px 20px rgba(56,103,137,.1);}
+.site-header.scrolled{box-shadow:0 4px 20px rgba(56,103,137,.1);}
+.site-header.scrolled::before{background:rgba(255,255,255,.96);}
 .header-inner{
   display:flex;align-items:center;justify-content:space-between;
   height:78px;max-width:var(--maxw);margin:0 auto;padding-inline:24px;
